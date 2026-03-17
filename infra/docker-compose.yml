@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nx_monorepo_cicd:
+    container_name: nx_monorepo_cicd
+    build: 
+      context: ../../
+      dockerfile: Dockerfile
+    image: nx_monorepo_cicd:1.0.0
+    ports:
+      - 3000:3000
+      - 3001:3001
