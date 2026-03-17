@@ -3,12 +3,11 @@ FROM node:20 as builder
 WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 
-RUN npm install --legacy-peer-deps
-
 COPY apps/ /usr/src/app/apps/
 COPY libs/ /usr/src/app/libs/
-
 COPY vitest.workspace.ts nx.json eslint.config.mjs tsconfig.base.json tsconfig.json .prettierignore .prettierrc ./
+
+RUN npm install --legacy-peer-deps
 
 RUN npx nx run-many --targets=build
 
