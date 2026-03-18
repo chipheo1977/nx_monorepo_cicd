@@ -5,7 +5,10 @@ export function Home() {
     <div className="page">
       <div className="page-header">
         <h1>🏠 Home</h1>
-        <p>Welcome to the Web App — your central hub for browsing products and more.</p>
+        <p>
+          Welcome to the Web App — your central hub for browsing products and
+          more.
+        </p>
       </div>
       <div className="page-content">
         <div className="card">
@@ -26,6 +29,26 @@ export function Home() {
           </p>
           <Button variant="outline" onClick={() => alert('Updates clicked!')}>
             View Updates
+          </Button>
+        </div>
+        <div className="card">
+          <h2>Hello World</h2>
+          <p>
+            Stay up-to-date with the latest features and improvements to our
+            platform.
+          </p>
+          <Button variant="outline" onClick={() => alert('View The World!')}>
+            View The World
+          </Button>
+        </div>
+        <div className="card">
+          <h2>Hello World 2</h2>
+          <p>
+            Stay up-to-date with the latest features and improvements to our
+            platform.
+          </p>
+          <Button variant="outline" onClick={() => alert('View The World 2!')}>
+            View The World 2
           </Button>
         </div>
       </div>
