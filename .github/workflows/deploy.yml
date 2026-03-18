@@ -44,8 +44,8 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd ~/nx_monorepo_cicd # Đường dẫn tới folder trên server
-            git pull origin main
+            cd ~/frontend/nx_monorepo_cicd # Đường dẫn tới folder trên server
+            git pull origin dev
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
             docker-compose -f infra/docker-compose.yml pull
             docker-compose -f infra/docker-compose.yml up -d
