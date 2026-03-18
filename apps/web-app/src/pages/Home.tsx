@@ -4,7 +4,7 @@ export function Home() {
   return (
     <div className="page">
       <div className="page-header">
-        <h1>🏠 Home</h1>
+        <h1>🏠 Home Hello World</h1>
         <p>
           Welcome to the Web App — your central hub for browsing products and
           more.
