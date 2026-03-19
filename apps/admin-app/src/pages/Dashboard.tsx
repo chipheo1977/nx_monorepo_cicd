@@ -32,6 +32,7 @@ export function Dashboard() {
           </div>
         ))}
       </div>
+      <hr />
       <div className="page-content">
         {stat2.map((stat) => (
           <div className="card stat-card" key={stat.label}>
