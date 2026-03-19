@@ -32,16 +32,6 @@ export function Home() {
           </Button>
         </div>
         <div className="card">
-          <h2>Hello World</h2>
-          <p>
-            Stay up-to-date with the latest features and improvements to our
-            platform.
-          </p>
-          <Button variant="outline" onClick={() => alert('View The World!')}>
-            View The World
-          </Button>
-        </div>
-        <div className="card">
           <h2>Hello World 2</h2>
           <p>
             Stay up-to-date with the latest features and improvements to our
