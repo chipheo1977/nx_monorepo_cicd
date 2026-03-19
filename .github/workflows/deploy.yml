@@ -50,6 +50,6 @@ jobs:
             pwd
             git pull origin dev
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
-            docker-compose -f infra/docker-compose.yml pull
-            docker-compose -f infra/docker-compose.yml up -d
+            docker compose -f infra/docker-compose.yml pull
+            docker compose -f infra/docker-compose.yml up -d
             docker image prune -f
