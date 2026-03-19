@@ -45,8 +45,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             pwd
-            cd ~/frontend/nx_repomono_cicd # Đường dẫn tới folder trên server
-            git config --global --add safe.directory /home/***/frontend/nx_repomono_cicd
+            cd ~/frontend/nx_monorepo_cicd # Đường dẫn tới folder trên server
+            git config --global --add safe.directory /home/***/frontend/nx_monorepo_cicd
             pwd
             git pull origin dev
             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
