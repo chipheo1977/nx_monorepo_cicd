@@ -6,7 +6,7 @@ services:
     # build:
     #   context: ../
     #   dockerfile: Dockerfile
-    image: ghcr.io/loinguyen2/nx_monorepo_cicd:latest
+    image: ghcr.io/chipheo1977/nx_monorepo_cicd:latest
     ports:
       - 3000:3000
       - 3001:3001
